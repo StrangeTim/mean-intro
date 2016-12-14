@@ -6,13 +6,13 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 
 const ROUTES = [
   {
-    path: '',
-    redirectTo: 'projects',
-    pathMatch: 'full',
+    path: '/',
+    component: HomePageComponent
   },
   {
     path: 'projects',
@@ -24,7 +24,8 @@ const ROUTES = [
 @NgModule({
   declarations: [
     AppComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
