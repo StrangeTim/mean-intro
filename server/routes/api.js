@@ -21,7 +21,7 @@ router.get('/', (req, res) => {
 });
 
 // Get all posts - axios dummy data for initial setup testing
-router.get('/posts', (req, res) => {
+router.get('/projects', (req, res) => {
   // Get posts from the mock api
   // This should ideally be replaced with a service that connects to MongoDB
   axios.get(`${axiosAPI}/posts`)
